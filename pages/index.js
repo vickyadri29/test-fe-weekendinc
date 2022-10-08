@@ -5,6 +5,9 @@ import Navbar from "../components/Navbar";
 import Headers from "../components/Headers";
 import Deffinition from "../components/Deffinition";
 import Testimonial from "../components/Testimonial";
+import Pov from "../components/Pov";
+import Resource from "../components/Resource";
+import HelpAndTips from "../components/HelpAndTips";
 
 export default function Home() {
   return (
@@ -26,6 +29,9 @@ export default function Home() {
         <Headers />
         <Deffinition />
         <Testimonial />
+        <Pov />
+        <Resource />
+        <HelpAndTips />
       </div>
     </section>
   );
