@@ -5,11 +5,11 @@ import oval from "../assets/deffinition/oval.svg";
 
 const Deffinition = () => {
   return (
-    <section className="bg-[#EEBECE] h-screen">
-      <div className="flex justify-end">
+    <section className="relative bg-[#EEBECE] h-screen">
+      <div className="absolute right-0">
         <Image src={bitmap} alt="Bitmap" />
       </div>
-      <div className="max-w-2xl m-auto p-5">
+      <div className="max-w-2xl m-auto p-5 pt-24">
         <div className="flex flex-col justify-between gap-4 md:text-[21px]">
           <p className="font-medium text-right">
             <span className="text-[#0B24FB]">Deffinition;</span> a practice or

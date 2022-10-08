@@ -8,6 +8,8 @@ import Testimonial from "../components/Testimonial";
 import Pov from "../components/Pov";
 import Resource from "../components/Resource";
 import HelpAndTips from "../components/HelpAndTips";
+import Closing from "../components/Closing";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -32,6 +34,8 @@ export default function Home() {
         <Pov />
         <Resource />
         <HelpAndTips />
+        <Closing />
+        <Footer />
       </div>
     </section>
   );
