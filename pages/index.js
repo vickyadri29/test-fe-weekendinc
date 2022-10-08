@@ -3,6 +3,8 @@ import Head from "next/head";
 // Import Components
 import Navbar from "../components/Navbar";
 import Headers from "../components/Headers";
+import Deffinition from "../components/Deffinition";
+import Testimonial from "../components/Testimonial";
 
 export default function Home() {
   return (
@@ -19,9 +21,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>
+      <div className="font-worksans">
         <Navbar />
         <Headers />
+        <Deffinition />
+        <Testimonial />
       </div>
     </section>
   );

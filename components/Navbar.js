@@ -6,7 +6,7 @@ import profile from "../assets/profile.svg";
 const Navbar = () => {
   return (
     <section>
-      <div className="fixed left-0 right-0 m-auto z-30 bg-white">
+      <div className="bg-white">
         <div className="max-w-4xl m-auto p-5">
           <div className="flex items-center gap-5">
             <Image src={profile} alt="profile" />
