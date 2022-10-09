@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Navigation, Grid } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -6,10 +7,26 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+import axios from "axios";
+
 import { dataTestimonials } from "../data";
 
 const Testimonial = () => {
-  const { datas } = dataTestimonials;
+  // const { datas } = dataTestimonials;
+  const [dataTestimonial, setDataTestimonial] = useState([]);
+
+  const BASE_URL =
+    "https://wknd-take-home-challenge-api.herokuapp.com/testimonial";
+
+  const fetchTestimonialDatas = async () => {
+    const res = await axios.get(BASE_URL);
+    setDataTestimonial(res.data);
+    // console.log(res);
+  };
+
+  useEffect(() => {
+    fetchTestimonialDatas().catch((err) => console.log(err));
+  }, []);
 
   return (
     <section className="bg-black text-white">
@@ -45,14 +62,14 @@ const Testimonial = () => {
                 },
               }}
             >
-              {datas.map((data, index) => {
-                const { title, desc } = data;
+              {dataTestimonial.map((data, index) => {
+                const { testimony, by } = data;
                 return (
                   <SwiperSlide key={index}>
                     <div className="relative">
-                      <div className="flex justify-center flex-col bg-white text-black px-5 py-3 md:w-[260px] w-[247px] h-[140px] md:mx-2">
-                        <h3 className="text-[32px] font-black">{title}</h3>
-                        <p className="text-xs">{desc}</p>
+                      <div className="flex justify-between flex-col bg-white text-black px-5 pt-3 pb-6 md:w-[260px] w-[247px] h-[140px] md:mx-2">
+                        <h3 className="text-[32px] font-black">{by}</h3>
+                        <p className="text-xs">{testimony}</p>
                       </div>
                     </div>
                   </SwiperSlide>
