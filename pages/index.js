@@ -15,7 +15,6 @@ export default function Home() {
   return (
     <section>
       <Head>
-        <title>Create Next App</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
