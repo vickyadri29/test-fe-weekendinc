@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-button-next {
+  background-image: url("../assets/nextBtn.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  padding: 20px;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  background-image: url("../assets/prevBtn.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  padding: 20px;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+@media only screen and (max-width: 414px) {
+  .swiper-button-next {
+    background-image: none;
+  }
+
+  .swiper-button-prev {
+    background-image: none;
+  }
+}
