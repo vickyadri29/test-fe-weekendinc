@@ -12,8 +12,8 @@ const Deffinition = () => {
       <div className="max-w-2xl m-auto p-5 pt-48">
         <div className="flex flex-col justify-between gap-4 md:text-[21px]">
           <p className="font-medium text-right">
-            <span className="text-[#0B24FB] font-bold">Deffinition;</span> a practice or
-            exercise to test or improve one's fitness for athletic competition,
+            <span className="text-[#0B24FB] font-bold">Deffinition</span> a practice or
+            exercise to test or improve one&apos;s fitness for athletic competition,
             ability, or performance to exhaust (something, such as a mine) by
             working to devise, arrange, or achieve by resolving difficulties.
             Merriam-Webster.com Dictionary.
