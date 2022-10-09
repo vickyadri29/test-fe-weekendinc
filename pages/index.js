@@ -26,7 +26,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="font-worksans">
+      <div className="font-worksans bg-black">
         <Navbar />
         <Headers />
         <Deffinition />

@@ -4,9 +4,9 @@ const Pov = () => {
   return (
     <section className="bg-black text-white">
       <div className="max-w-2xl m-auto p-5">
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col md:items-center gap-4">
           <h2 className="font-black text-[32px]">POV</h2>
-          <p className="text-center text-lg">
+          <p className="md:text-center text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud ullamco laboris nisi ea commodo

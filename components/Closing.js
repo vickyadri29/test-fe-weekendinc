@@ -14,7 +14,7 @@ const Closing = () => {
           </p>
         </div>
       </div>
-      <div className="absolute bottom-0">
+      <div className="md:absolute relative bottom-0 md:top-[27px] top-[8px]">
         <Image src={images} alt="images" />
       </div>
     </section>

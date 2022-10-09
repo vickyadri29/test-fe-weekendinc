@@ -25,3 +25,13 @@
 .swiper-button-prev::after {
   display: none;
 }
+
+@media only screen and (max-width: 414px) {
+  .swiper-button-next {
+    background-image: none;
+  }
+
+  .swiper-button-prev {
+    background-image: none;
+  }
+}

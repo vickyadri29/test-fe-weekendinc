@@ -14,9 +14,9 @@ const Testimonial = () => {
   return (
     <section className="bg-black text-white">
       <div className="max-w-2xl m-auto">
-        <div className="relative bottom-36 flex flex-col items-center gap-5">
-          <h2 className="md:text-[38px] font-black">Testimonial</h2>
-          <div className="w-full flex gap-5">
+        <div className="relative md:bottom-36 bottom-[85px] flex flex-col md:items-center gap-5 md:pl-0 pl-12">
+          <h2 className="md:text-[38px] text-[32px] font-black">Testimonial</h2>
+          <div className="w-full flex md:gap-5">
             <Swiper
               modules={[Navigation]}
               navigation={true}
@@ -30,19 +30,14 @@ const Testimonial = () => {
                 300: {
                   slidesPerView: "1",
                   spaceBetween: 30,
-                  pagination: {
-                    clickable: "true",
-                    dynamicBullets: "true",
-                  },
+                  slidesPerView: "1.35",
+                  hashNavigation: false,
                 },
                 // when window width is >= 768px
                 768: {
                   slidesPerView: "3",
                   spaceBetween: 30,
-                  pagination: {
-                    clickable: "true",
-                    dynamicBullets: "true",
-                  },
+                  slidesPerView: "2.4",
                 },
                 1024: {
                   spaceBetween: 10,
@@ -55,8 +50,8 @@ const Testimonial = () => {
                 return (
                   <SwiperSlide key={index}>
                     <div className="relative">
-                      <div className="flex justify-center flex-col bg-white text-black px-5 py-3 w-[260px] h-[140px] mx-2">
-                        <h3 className="md:text-[32px] font-black">{title}</h3>
+                      <div className="flex justify-center flex-col bg-white text-black px-5 py-3 md:w-[260px] w-[247px] h-[140px] md:mx-2">
+                        <h3 className="text-[32px] font-black">{title}</h3>
                         <p className="text-xs">{desc}</p>
                       </div>
                     </div>
