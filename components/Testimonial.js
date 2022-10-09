@@ -9,10 +9,7 @@ import "swiper/css/pagination";
 
 import axios from "axios";
 
-import { dataTestimonials } from "../data";
-
 const Testimonial = () => {
-  // const { datas } = dataTestimonials;
   const [dataTestimonial, setDataTestimonial] = useState([]);
 
   const BASE_URL =

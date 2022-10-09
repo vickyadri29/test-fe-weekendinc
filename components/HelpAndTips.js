@@ -6,10 +6,7 @@ import path from "../assets/helpandtips/path.svg";
 
 import axios from "axios";
 
-import { dataHelpAndTips } from "../data";
-
 const HelpAndTips = () => {
-  // const { datas } = dataHelpAndTips;
   const [dataHelpAndTips, setDataHelpAndTips] = useState([]);
 
   const BASE_URL =
