@@ -5,8 +5,8 @@ import oval from "../assets/deffinition/oval.svg";
 
 const Deffinition = () => {
   return (
-    <section className="relative bg-[#EEBECE] md:pb-0 pb-20 bottom-1">
-      <div className="absolute md:top-20 right-0">
+    <section className="relative bg-[#EEBECE] md:pb-24 pb-14 bottom-1">
+      <div className="absolute lg:top-24 right-0">
         <Image src={bitmap} alt="Bitmap" />
       </div>
       <div className="max-w-2xl m-auto p-5 pt-48">

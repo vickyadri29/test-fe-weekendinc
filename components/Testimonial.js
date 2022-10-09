@@ -14,7 +14,7 @@ const Testimonial = () => {
   return (
     <section className="bg-black text-white">
       <div className="max-w-2xl m-auto">
-        <div className="relative md:bottom-36 bottom-[85px] flex flex-col md:items-center gap-5 md:pl-0 pl-12">
+        <div className="relative md:bottom-36 bottom-[100px] flex flex-col md:items-center gap-5 md:pl-0 pl-12">
           <h2 className="md:text-[38px] text-[32px] font-black">Testimonial</h2>
           <div className="w-full flex md:gap-5">
             <Swiper

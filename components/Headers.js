@@ -14,12 +14,12 @@ import ovalMobile from "../assets/header/ovalMobile.svg";
 
 const Headers = () => {
   return (
-    <section className="relative bg-[#EEBECE] h-[75vh]">
-      <div className="bg-[url('../assets/header/path2.svg')] bg-no-repeat bg-center absolute z-10 md:left-0 right-0 md:h-[116vh] h-[75vh]">
+    <section className="relative bg-[#EEBECE] lg:h-[100vh] md:h-[60vh] h-[75vh]">
+      <div className="bg-[url('../assets/header/path2.svg')] bg-no-repeat lg:bg-center md:bg-center bg-center absolute z-10 md:left-0 right-0 lg:h-[116vh] h-[75vh]">
         <div className="absolute flex max-w-4xl m-auto z-10 md:left-0 -left-[90%] md:right-0 md:top-0 top-4">
           <Image src={path1} alt="bg" />
         </div>
-        <div className="absolute lg:flex z-50 max-w-lg m-auto md:left-0 -left-[15%] right-0 md:top-60 top-72">
+        <div className="absolute lg:flex z-10 max-w-lg m-auto md:left-0 -left-[15%] right-0 md:top-60 top-72">
           <Image src={oval} alt="bg" />
         </div>
         <div className="md:absolute hidden lg:flex justify-center z-10 max-w-lg m-auto left-[700px] right-0 top-72">
